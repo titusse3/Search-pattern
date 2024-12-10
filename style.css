@@ -1,0 +1,296 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+article {
+  border: 2px solid rebeccapurple; /* Ajoute une bordure visible */
+}
+
+#head {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#foot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#input-contain  {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  font-size: 1.2em;
+  gap: 30px;
+  padding: 2%;
+}
+
+#input-contain form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#input-contain h1 {
+  color: rebeccapurple;
+  font-size: 1.9em;
+  margin: 0;
+  text-decoration: underline;
+}
+
+#input-contain div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#input-contain label {
+  color: rebeccapurple;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#input-contain input, #input-contain textarea, #input-contain select {
+  outline: none;
+  border: 2px solid rebeccapurple;
+  border-radius: 5px;
+  width: 70%;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+#input-contain select {
+  width: auto;
+  background-color: white;
+  padding: 5px;
+}
+
+#input-contain select:hover {
+  cursor: pointer;
+}
+
+#input-contain textarea {
+  min-height: 100px; 
+  max-height: 30vh;
+  resize: vertical;
+}
+
+#input-contain input[type="submit"] {
+  width: 30%;
+  background-color: white;
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+#input-contain input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: white;
+  transition: all .5s;
+}
+
+#display-response, #dispay-auxilary-tables {
+  visibility: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  padding: 1%;
+  height: fit-content;
+}
+
+#dispay-auxilary-tables {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+
+#dispay-auxilary-tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espace entre les tables */
+  width: fit-content;
+  height: fit-content;
+  min-width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; /* Meilleur ombrage */
+}
+
+#dispay-auxilary-tables table {
+  border: 1px solid rebeccapurple; /* Bordure pour chaque table */
+  border-radius: 5px;
+  width: 100%; /* Tables prennent toute la largeur disponible */
+  margin: 10px 0;
+}
+
+#dispay-auxilary-tables th, #dispay-auxilary-tables td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(128, 0, 128, 0.2); /* Bordure fine pour chaque cellule */
+}
+
+#dispay-auxilary-tables thead {
+  background-color: rebeccapurple;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#dispay-auxilary-tables tbody tr:nth-child(even) {
+  background-color: rgba(128, 0, 128, 0.1); /* Fond alterné pour les lignes */
+}
+
+#dispay-auxilary-tables tbody tr:hover {
+  background-color: rgba(128, 0, 128, 0.2); /* Surbrillance au survol */
+  transition: background-color 0.3s ease; /* Transition douce */
+}
+
+
+table {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+#display-response td, #display-response th {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.find {
+  background-color: #99CC66;
+  color: white;
+}
+
+.other-match {
+  background-color: rgba(102, 51, 153, 0.5);
+  color: white;
+}
+
+.comparaison-g {
+  background-color: rgba(153, 204, 102, 0.9);
+}
+
+.comparaison-b {
+  background-color:  rgba(204, 102, 102, 0.5)
+}
+
+@media (max-width: 1000px) {
+  #head {
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+    margin: 0;
+    gap: 5vh;
+  }
+
+  #display-response {
+    border-radius: 0;
+    border: 3px solid rebeccapurple;
+  }
+
+  #input-contain {
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 85vw;
+    gap: 20px;
+    box-shadow: none;
+    font-size: 1.2em;
+    border-radius: 0;
+    min-height: 40vh;
+  }
+
+  #input-contain form {
+    gap: 0;
+  }
+
+  #input-contain h1 {
+    font-size: 4em; /* Augmentation pour le titre */
+    text-align: center;
+  }
+
+  #input-contain div {
+    flex-direction: column;
+  }
+
+  #input-contain label {
+    font-size: 2.3em; /* Plus grande taille pour les labels */
+  }
+
+  #input-contain input, 
+  #input-contain textarea, 
+  #input-contain select,
+  #input-contain input[type="submit"] {
+    font-size: 2em; /* Augmentation pour les champs */
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  #input-contain select {
+    width: 70%;
+    border: 3px solid rebeccapurple;
+  }
+
+  #input-contain input[type="submit"] {
+    margin-top: 3%;
+    width: 60%;
+    padding: 10px;
+  }
+
+  #dispay-auxilary-tables {
+    border-radius: 0;
+    border: 3px solid rebeccapurple;
+    font-size: 2.6em;
+  }
+
+  #dispay-auxilary-tables th, #dispay-auxilary-tables td {
+    border: 3px solid rgba(128, 0, 128, 0.2);
+  }
+}

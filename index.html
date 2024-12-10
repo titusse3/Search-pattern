@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recherce de pattern</title>
+    <link rel="stylesheet" content="text/css" href="style.css">
+    <script type="module" src="algo.js"></script>
+    <script type="module" src="model.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="head">
+        <article id="input-contain">
+          <h1>Pattern Search</h1>
+          <form id="input">
+            <div>
+              <label for="word">Mot :</label>
+              <input id="word" required>
+            </div>
+            <div>
+              <label for="text">Texte :</label>
+              <textarea id="text" required></textarea>
+            </div>
+            <div>
+              <label for="algo">Algorithme :</label>
+              <select name="algo" id="algo" required>
+                <option selected="selected" value="">Choisir un algorithme</option>
+                <option value="mp">Morris et Pratt</option>
+                <option value="kmp">Knuth, Morris et Pratt</option>
+                <option value="bm">Boyer et Moore</option>
+                <option value="h">Horspool</option>
+                <option value="q">Quicksearch</option>
+              </select>
+            </div>
+            <div>
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </article>
+        <article id="display-response">
+        </article>
+      </div>
+      <div id="foot">
+        <article id="dispay-auxilary-tables">
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
