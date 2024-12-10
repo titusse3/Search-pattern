@@ -49,6 +49,7 @@ export function morris_pratt(x, m, y, n) {
     }
   }
   decal[decal.length - 1].bad = i;
+  decal[decal.length - 1].end = i;
   return decal;
 }
 
@@ -107,6 +108,7 @@ export function knuth_morris_pratt(x, m, y, n) {
     }
   }
   decal[decal.length - 1].bad = i;
+  decal[decal.length - 1].end = i;
   return decal;
 }
 

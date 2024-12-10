@@ -92,7 +92,6 @@ function appendBodyRow(tbody, cells, line_class = '', start = undefined,
     if (cellText != '') {
       ++i;
     }
-    
     if (b && i >= start && i <= end) {
       td.classList.add('comparaison-g');
     }
